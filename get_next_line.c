@@ -6,7 +6,7 @@
 /*   By: fbonaert <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 12:04:11 by fbonaert          #+#    #+#             */
-/*   Updated: 2020/11/12 15:47:38 by fbonaert         ###   ########.fr       */
+/*   Updated: 2021/01/03 15:16:59 by fbonaert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,7 +129,6 @@ static int		get_next_line2(const int fd, char **line, unsigned int buffer)
 		printf("Oh dear something went wrong with read()! %s\n", strerror(errno));
 		return (-1);
 	}
-	line[k
 	//CONDITIONS return -1 et 0
 	if (read(fd, tmp, buffer) > 0)
 	{
